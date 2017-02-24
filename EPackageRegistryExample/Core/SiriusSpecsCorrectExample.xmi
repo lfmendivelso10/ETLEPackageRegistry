@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="SiriusSpecsExample" version="11.0.0.201601261200">
+  <ownedViewpoints name="example">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DiagramExample" domainClass="MainSystem" enablePopupBars="true">
+      <metamodel href="http://www.example.org/ComponentMetamodel#/"/>
+      <metamodel href="http://www.example.org/OOMetamodel#/"/>
+      <defaultLayer name="Default">
+        <containerMappings name="OPackage" semanticCandidatesExpression="feature:systemPackages" domainClass="OPackage">
+          <subNodeMappings name="OClass" semanticCandidatesExpression="feature:contents" domainClass="OClass">
+            <style xsi:type="style:SquareDescription" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="2">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

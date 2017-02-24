@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_4mPyQPqZEeaeHslHl9OODg" version="11.0.0.201604141600">
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <semanticResources>plugin.xml</semanticResources>
+  <semanticResources>Core/SimpleOO.ecore</semanticResources>
+  <semanticResources>Core/SimpleOO.genmodel</semanticResources>
+  <semanticResources>environment:/viewpoint</semanticResources>
+  <semanticResources>http://www.example.org/ComponentMetamodel</semanticResources>
+  <semanticResources>Core/backup/SiriusSpecsGenerated.xmi</semanticResources>
+  <semanticResources>Core/SiriusSpecsCorrectExample.xmi</semanticResources>
+  <semanticResources>SimpleOO.ecore</semanticResources>
+  <semanticResources>Core/SiriusSpecsGenerated.xmi</semanticResources>
+</viewpoint:DAnalysis>

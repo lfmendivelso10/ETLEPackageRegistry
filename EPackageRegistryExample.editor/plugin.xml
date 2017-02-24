@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated SimpleOO -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ObjectModel.presentation.ObjectModelModelWizardID"
+            name="%_UI_ObjectModelModelWizard_label"
+            class="ObjectModel.presentation.ObjectModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ObjectModelModelFile.gif">
+         <description>%_UI_ObjectModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated SimpleOO -->
+      <editor
+            id="ObjectModel.presentation.ObjectModelEditorID"
+            name="%_UI_ObjectModelEditor_label"
+            icon="icons/full/obj16/ObjectModelModelFile.gif"
+            extensions="objectmodel"
+            class="ObjectModel.presentation.ObjectModelEditor"
+            contributorClass="ObjectModel.presentation.ObjectModelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated SimpleOO -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ComponentModel.presentation.ComponentModelModelWizardID"
+            name="%_UI_ComponentModelModelWizard_label"
+            class="ComponentModel.presentation.ComponentModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ComponentModelModelFile.gif">
+         <description>%_UI_ComponentModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated SimpleOO -->
+      <editor
+            id="ComponentModel.presentation.ComponentModelEditorID"
+            name="%_UI_ComponentModelEditor_label"
+            icon="icons/full/obj16/ComponentModelModelFile.gif"
+            extensions="componentmodel"
+            class="ComponentModel.presentation.ComponentModelEditor"
+            contributorClass="ComponentModel.presentation.ComponentModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

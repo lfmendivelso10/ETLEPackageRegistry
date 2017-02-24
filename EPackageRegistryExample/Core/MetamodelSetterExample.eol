@@ -1,0 +1,18 @@
+// Get all Diagrams
+var diagrams = Sirius!DiagramDescription.allInstances();
+
+// Get Metamodel EPackage by nsURI
+var emfTool = new Native("org.eclipse.epsilon.emc.emf.tools.EmfTool");
+
+var package1 =emfTool.getEPackage("http://www.example.org/OOMetamodel");
+package1.println();
+
+var package2 =emfTool.getEPackage("http://www.example.org/ComponentMetamodel");
+package2.println();
+
+for(diagram in diagrams){
+	diagram.println();
+	diagram.metamodel = new List();
+	diagram.metamodel.add(package1);
+	diagram.metamodel.add(package2);
+}

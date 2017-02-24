@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EPackageRegistryExample/src" modelPluginID="EPackageRegistryExample"
+    modelName="SimpleOO" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>SimpleOO.ecore</foreignModel>
+  <genPackages prefix="ObjectModel" disposableProviderFactory="true" ecorePackage="SimpleOO.ecore#/0">
+    <genClasses ecoreClass="SimpleOO.ecore#/0/OPackage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/0/OPackage/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/0/OPackage/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleOO.ecore#/0/OPackage/contents"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleOO.ecore#/0/OClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/0/OClass/name"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="ComponentModel" disposableProviderFactory="true" ecorePackage="SimpleOO.ecore#/1">
+    <genClasses ecoreClass="SimpleOO.ecore#/1/Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/1/Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/1/Component/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleOO.ecore#/1/Component/contents"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleOO.ecore#/1/Component/packageReference"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleOO.ecore#/1/Dependency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleOO.ecore#/1/Dependency/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleOO.ecore#/1/Dependency/dependOf"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
